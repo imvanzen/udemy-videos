@@ -3,12 +3,12 @@ import React from "react";
 class SearchBar extends React.Component {
     state = { term: '' };
 
-    onInputChange = (e) => {
+    onInputChange = e => {
         this.setState({term: e.target.value});
     }
 
-    onFormSubmit = (e) => {
-        e.preventDefalut();
+    onFormSubmit = e => {
+        e.preventDefault();
     } 
 
     render() {
