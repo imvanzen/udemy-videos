@@ -8,7 +8,9 @@ class App extends React.Component {
 
     onTermSubmit = async (term) => {
         const response = await youtube.get('/search', {
-            q: term
+            params: {
+                q: term
+            }
         });
         this.setState({videos: response.data.items});
     }
