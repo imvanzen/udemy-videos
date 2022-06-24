@@ -1,10 +1,10 @@
 import React from 'react';
 import VideoItem from './VideoItem';
 
-const VideoList = (props) => {
+const VideoList = ({videos}) => {
     return (
         <div className='video-list'>
-            I have {props.videos.length} videos.
+            I have {videos.length} videos.
         </div>
     )
 }
