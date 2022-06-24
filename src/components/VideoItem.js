@@ -9,8 +9,10 @@ const VideoItem = ({video}) => {
 
     return (
         <div className="video-item item">
-            <img src={thumbnails.medium.url} />
-            {title}
+            <img className="ui image" src={thumbnails.medium.url} />
+            <div className="content">
+                <div className="header">{title}</div>
+            </div>
         </div>
     )
 }
