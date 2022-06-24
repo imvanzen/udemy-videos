@@ -4,7 +4,7 @@ import VideoItem from './VideoItem';
 const VideoList = (props) => {
     return (
         <div className='video-list'>
-            <VideoItem />
+            I have {props.videos.length} videos.
         </div>
     )
 }
