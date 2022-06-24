@@ -8,7 +8,7 @@ const VideoItem = ({video}) => {
     } = video;
 
     return (
-        <div className="video-item">
+        <div className="video-item item">
             <img src={thumbnails.medium.url} />
             {title}
         </div>
