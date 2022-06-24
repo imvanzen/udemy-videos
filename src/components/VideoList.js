@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
+import VideoItem from './VideoItem';
 
-const VideoList = () => {
+const VideoList = (props) => {
     return (
-        <div>VideoList</div>
+        <div className='video-list'>
+            <VideoItem />
+        </div>
     )
 }
 
