@@ -2,7 +2,10 @@ import './VideoItem.css';
 
 import React from "react";
 
-const VideoItem = ({video}) => {
+const VideoItem = ({
+    video,
+    onVideoSelect
+}) => {
     const {
         snippet: {
             title,
@@ -11,7 +14,7 @@ const VideoItem = ({video}) => {
     } = video;
 
     return (
-        <div className="video-item item">
+        <div className="video-item item" onClick={() => onVideoSelect(video)}>
             <img className="ui image" src={thumbnails.medium.url} />
             <div className="content">
                 <div className="header">{title}</div>
