@@ -1,4 +1,7 @@
+import './VideoItem.css';
+
 import React from "react";
+
 const VideoItem = ({video}) => {
     const {
         snippet: {
