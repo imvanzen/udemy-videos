@@ -6,7 +6,7 @@ import VideoList from "./VideoList";
 class App extends React.Component {
     state = { 
         videos: [],
-        selectedVideo: {}
+        selectedVideo: null
      };
 
     onTermSubmit = async (term) => {
